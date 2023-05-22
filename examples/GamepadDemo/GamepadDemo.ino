@@ -43,10 +43,10 @@ void loop() {
   count++;
 
   // Move x/y Axis to a new position (16bit)
-  Gamepad.leftXAxis(random(0xFF));
-  Gamepad.leftYAxis(random(0xFF));
-  Gamepad.rightXAxis(random(0xFF));
-  Gamepad.rightYAxis(random(0xFF));
+  Gamepad.leftXAxis(random(256));
+  Gamepad.leftYAxis(random(256));
+  Gamepad.rightXAxis(random(256));
+  Gamepad.rightYAxis(random(256));
 
   // Go through all dPad positions
   static uint8_t dpad = NSGAMEPAD_DPAD_UP;
